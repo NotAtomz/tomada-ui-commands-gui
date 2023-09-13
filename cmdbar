@@ -1,0 +1,158 @@
+
+local commandbar = Instance.new("ScreenGui")
+local cmdbar = Instance.new("Frame")
+local text = Instance.new("TextBox")
+local Focus = Instance.new("Frame")
+local Dilimeter = Instance.new("TextLabel")
+local SBar = Instance.new("TextLabel")
+local color = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+
+local function Tween(Object, Time, Style, Direction, Customization)
+	if Style == nil then
+		game:GetService("TweenService"):Create(Object, TweenInfo.new(Time), Customization):Play()
+	else
+		game:GetService("TweenService"):Create(Object, TweenInfo.new(Time, Style, Direction), Customization):Play()
+	end
+end
+
+--Properties:
+
+commandbar.Name = "command bar"
+commandbar.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+commandbar.ResetOnSpawn = false
+
+cmdbar.Name = "cmdbar"
+cmdbar.Parent = commandbar
+cmdbar.BackgroundColor3 = Color3.fromRGB(73, 71, 191)
+cmdbar.BackgroundTransparency = 1.000
+cmdbar.BorderSizePixel = 0
+cmdbar.Position = UDim2.new(0.435000002, -345, 1.899999976, 0)
+cmdbar.Size = UDim2.new(0, 950, 0, 26)
+cmdbar.ZIndex = 2
+
+text.Name = "text"
+text.Parent = cmdbar
+text.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+text.BackgroundTransparency = 0.200
+text.BorderSizePixel = 0
+text.Size = UDim2.new(0, 950, 0, 26)
+text.Font = Enum.Font.SourceSans
+text.PlaceholderText = "Tomada UI, Click "..prefix.." To Focus"
+text.Text = ""
+text.TextColor3 = Color3.fromRGB(198, 198, 198)
+text.TextSize = 18.000
+text.TextXAlignment = Enum.TextXAlignment.Left
+
+Focus.Name = "Focus"
+Focus.Parent = text
+Focus.AnchorPoint = Vector2.new(0, 0.349999994)
+Focus.BackgroundColor3 = Color3.fromRGB(82, 148, 255)
+Focus.BackgroundTransparency = 0.200
+Focus.BorderSizePixel = 0
+Focus.Position = UDim2.new(0.47300002, 0, 2.02900004, 0)
+Focus.Size = UDim2.new(0, 0, 0, 5)
+
+Dilimeter.Name = "Dilimeter"
+Dilimeter.Parent = text
+Dilimeter.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Dilimeter.BackgroundTransparency = 0.200
+Dilimeter.BorderSizePixel = 0
+Dilimeter.Position = UDim2.new(-0.0380000062, 0, 1, 0)
+Dilimeter.Size = UDim2.new(0, 36, 0, 26)
+Dilimeter.ZIndex = 0
+Dilimeter.Font = Enum.Font.SourceSansBold
+Dilimeter.Text = ">"
+Dilimeter.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dilimeter.TextSize = 20.000
+
+SBar.Name = "SBar"
+SBar.Parent = text
+SBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SBar.BackgroundTransparency = 1.000
+SBar.Size = UDim2.new(1, 0, 1, 0)
+SBar.Font = Enum.Font.SourceSansBold
+SBar.Text = ""
+SBar.TextColor3 = Color3.fromRGB(168, 168, 168)
+SBar.TextSize = 18.000
+SBar.TextXAlignment = Enum.TextXAlignment.Left
+
+color.Name = "color"
+color.Parent = text
+color.BackgroundColor3 = Color3.fromRGB(0, 155, 255)
+color.BackgroundTransparency = 1
+color.BorderSizePixel = 0
+color.Position = UDim2.new(0.326604396, -345, 1.9630759848, 0)
+color.Size = UDim2.new(0, 984, 0, 3)
+color.ZIndex = 2
+
+TextLabel.Parent = text
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.036842104, 0, 2.19230771, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 17)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Tomada UI | https://discord.gg/y49JDDmx2v"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+function NYGZA_sfake_script()
+local script = Instance.new('LocalScript', color)-- ColorBox.LocalScript 
+	--local script = Instance.new('LocalScript')
+	script.Parent = color
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+	 script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+
+end
+coroutine.wrap(NYGZA_sfake_script)()
+
+text.Focused:connect(function()
+	text.Text = ""
+
+end)
+text.FocusLost:connect(function(enterPressed)
+	local Rem = text.Text
+
+	game.Players:Chat(Rem)
+	text.Text = ""
+	for i = 0,1,0.1 do
+color.BackgroundTransparency = i
+	wait()
+	end
+wait(0.5)
+Tween(cmdbar, 1.599, Linear, In, {Position = UDim2.new(0.435000002, -345, 1.899999976, 0)})
+Tween(Focus, 1.599, Linear, In, {Position = UDim2.new(0.47300002, 0, 2.02900004, 0)})
+Tween(Dilimeter, 1.599, Linear, In, {Position = UDim2.new(-0.0380000062, 0, 1, 0)})
+Tween(color, 1.599, Linear, In, {Position = UDim2.new(0.326604396, -345, 1.9630759848, 0)})
+Tween(TextLabel, 1.599, Linear, In, {Position = UDim2.new(-0.036842104, 0, 2.19230771, 0)})
+
+end)
+game:GetService("Players").LocalPlayer:GetMouse().KeyDown:connect(function(input)
+	if (input == ";") then
+		text:CaptureFocus()
+Tween(cmdbar, .5, Linear, In, {Position = UDim2.new(0.435000002, -345, 0.899999976, 0)})
+Tween(Focus, .5, Linear, In, {Position = UDim2.new(0.47300002, 0, 1.02900004, 0)})
+Tween(Dilimeter, .5, Linear, In, {Position = UDim2.new(-0.0380000062, 0, 0, 0)})
+Tween(color, .5, Linear, In, {Position = UDim2.new(0.326604396, -345, 0.9630759848, 0)})
+Tween(TextLabel, .5, Linear, In, {Position = UDim2.new(-0.036842104, 0, 1.19230771, 0)})
+wait(0.5)
+		for i = 1,0,-0.1 do
+color.BackgroundTransparency = i
+
+	wait()
+			end
+		end
+
+	end)
+	end
+	script.Parent.MouseButton1Click:connect(onClicked)
+end
+coroutine.wrap(WESNAsw_fake_script)()
