@@ -1,0 +1,791 @@
+local sound = Instance.new("Sound")
+		sound.SoundId = "rbxassetid://2390693566"
+		sound.Parent = game:GetService("SoundService")
+		sound:Play()
+local commands = Instance.new("ScreenGui")
+local commands_2 = Instance.new("TextLabel")
+local Commands = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local List = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local kill = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local unfly = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local baldall = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local kidnap = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local ban = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local fly = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local kick = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local nolimbs = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local goto = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local view = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local punish = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local jail = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local ragdoll = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local commands_3 = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
+local rejoin = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
+local removetools = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local stealtools = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local shutdown = Instance.new("TextLabel")
+local UICorner_18 = Instance.new("UICorner")
+local serverlock = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
+local removetoolsall = Instance.new("TextLabel")
+local UICorner_20 = Instance.new("UICorner")
+local nolimbsall = Instance.new("TextLabel")
+local UICorner_21 = Instance.new("UICorner")
+local bald = Instance.new("TextLabel")
+local UICorner_22 = Instance.new("UICorner")
+local ragdollall = Instance.new("TextLabel")
+local UICorner_23 = Instance.new("UICorner")
+local killall = Instance.new("TextLabel")
+local UICorner_24 = Instance.new("UICorner")
+local punishall = Instance.new("TextLabel")
+local UICorner_25 = Instance.new("UICorner")
+local softshutdown = Instance.new("TextLabel")
+local UICorner_26 = Instance.new("UICorner")
+local btools = Instance.new("TextLabel")
+local UICorner_27 = Instance.new("UICorner")
+local loopkill = Instance.new("TextLabel")
+local UICorner_28 = Instance.new("UICorner")
+local unloopkill = Instance.new("TextLabel")
+local UICorner_29 = Instance.new("UICorner")
+local fling = Instance.new("TextLabel")
+local UICorner_30 = Instance.new("UICorner")
+local unview = Instance.new("TextLabel")
+local UICorner_31 = Instance.new("UICorner")
+local Example = Instance.new("TextLabel")
+local Empty = Instance.new("TextLabel")
+local CmdName = Instance.new("TextLabel")
+local Description = Instance.new("TextLabel")
+local Aliases = Instance.new("TextLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local list = Instance.new("TextLabel")
+local UICorner_32 = Instance.new("UICorner")
+local close = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+
+--Properties:
+
+commands.Name = "commands"
+commands.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+commands.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+commands.ResetOnSpawn = false
+
+commands_2.Name = "commands"
+commands_2.Parent = commands
+commands_2.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+commands_2.BackgroundTransparency = 1.000
+commands_2.Position = UDim2.new(0.508, -135, 2.51, -764)
+commands_2.Size = UDim2.new(0, 271, 0, 30)
+commands_2.Font = Enum.Font.SourceSans
+commands_2.Text = " "
+commands_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+commands_2.TextScaled = true
+commands_2.TextSize = 14.000
+commands_2.TextWrapped = true
+
+Commands.Name = "Commands"
+Commands.Parent = commands_2
+Commands.AnchorPoint = Vector2.new(0.5, 0.5)
+Commands.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Commands.BackgroundTransparency = 0.200
+Commands.BorderSizePixel = 0
+Commands.Position = UDim2.new(0.389520049, 0, 10.8999987, 0)
+Commands.Size = UDim2.new(0, 984, 0, 650)
+Commands.ZIndex = 2
+
+Title.Name = "Title"
+Title.Parent = Commands
+Title.AnchorPoint = Vector2.new(0.5, 0)
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0, 492, 0, 3)
+Title.Size = UDim2.new(0, 207, 0, 18)
+Title.ZIndex = 2
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "TOMADA UI COMMANDS"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 24.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+List.Name = "List"
+List.Parent = Commands
+List.AnchorPoint = Vector2.new(0.5, 0.5)
+List.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+List.BackgroundTransparency = 1.000
+List.BorderSizePixel = 0
+List.Position = UDim2.new(0.5, 0, 0.53508234, 0)
+List.Size = UDim2.new(1, 0, 0.929835379, 0)
+List.ZIndex = 3
+List.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+List.CanvasSize = UDim2.new(0, 0, 0, 1250)
+List.ScrollBarThickness = 5
+List.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+
+UIListLayout.Parent = List
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 10)
+
+kill.Name = "kill"
+kill.Parent = List
+kill.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+kill.BackgroundTransparency = 0.200
+kill.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+kill.Size = UDim2.new(0, 957, 0, 30)
+kill.Font = Enum.Font.SourceSansBold
+kill.Text = "kill  [player]"
+kill.TextColor3 = Color3.fromRGB(255, 255, 255)
+kill.TextSize = 18.000
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = kill
+
+unfly.Name = "unfly"
+unfly.Parent = List
+unfly.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+unfly.BackgroundTransparency = 0.200
+unfly.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+unfly.Size = UDim2.new(0, 957, 0, 30)
+unfly.Font = Enum.Font.SourceSansBold
+unfly.Text = "unfly"
+unfly.TextColor3 = Color3.fromRGB(255, 255, 255)
+unfly.TextSize = 18.000
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = unfly
+
+baldall.Name = "baldall"
+baldall.Parent = List
+baldall.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+baldall.BackgroundTransparency = 0.200
+baldall.Position = UDim2.new(-0.00456389459, 0, 0, 0)
+baldall.Size = UDim2.new(0, 957, 0, 30)
+baldall.Font = Enum.Font.SourceSansBold
+baldall.Text = "baldall"
+baldall.TextColor3 = Color3.fromRGB(255, 255, 255)
+baldall.TextSize = 18.000
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = baldall
+
+kidnap.Name = "kidnap"
+kidnap.Parent = List
+kidnap.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+kidnap.BackgroundTransparency = 0.200
+kidnap.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+kidnap.Size = UDim2.new(0, 957, 0, 30)
+kidnap.Font = Enum.Font.SourceSansBold
+kidnap.Text = "kidnap [player]"
+kidnap.TextColor3 = Color3.fromRGB(255, 255, 255)
+kidnap.TextSize = 18.000
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = kidnap
+
+ban.Name = "ban"
+ban.Parent = List
+ban.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+ban.BackgroundTransparency = 0.200
+ban.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+ban.Size = UDim2.new(0, 957, 0, 30)
+ban.Font = Enum.Font.SourceSansBold
+ban.Text = "ban [player]"
+ban.TextColor3 = Color3.fromRGB(255, 255, 255)
+ban.TextSize = 18.000
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = ban
+
+fly.Name = "fly"
+fly.Parent = List
+fly.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+fly.BackgroundTransparency = 0.200
+fly.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+fly.Size = UDim2.new(0, 957, 0, 30)
+fly.Font = Enum.Font.SourceSansBold
+fly.Text = "fly"
+fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+fly.TextSize = 18.000
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = fly
+
+kick.Name = "kick"
+kick.Parent = List
+kick.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+kick.BackgroundTransparency = 0.200
+kick.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+kick.Size = UDim2.new(0, 957, 0, 30)
+kick.Font = Enum.Font.SourceSansBold
+kick.Text = "kick [player]"
+kick.TextColor3 = Color3.fromRGB(255, 255, 255)
+kick.TextSize = 18.000
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = kick
+
+nolimbs.Name = "nolimbs"
+nolimbs.Parent = List
+nolimbs.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+nolimbs.BackgroundTransparency = 0.200
+nolimbs.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+nolimbs.Size = UDim2.new(0, 957, 0, 30)
+nolimbs.Font = Enum.Font.SourceSansBold
+nolimbs.Text = "nolimbs [player]"
+nolimbs.TextColor3 = Color3.fromRGB(255, 255, 255)
+nolimbs.TextSize = 18.000
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = nolimbs
+
+goto.Name = "goto"
+goto.Parent = List
+goto.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+goto.BackgroundTransparency = 0.200
+goto.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+goto.Size = UDim2.new(0, 957, 0, 30)
+goto.Font = Enum.Font.SourceSansBold
+goto.Text = "goto [player]"
+goto.TextColor3 = Color3.fromRGB(255, 255, 255)
+goto.TextSize = 18.000
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = goto
+
+view.Name = "view"
+view.Parent = List
+view.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+view.BackgroundTransparency = 0.200
+view.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+view.Size = UDim2.new(0, 957, 0, 30)
+view.Font = Enum.Font.SourceSansBold
+view.Text = "view [player]"
+view.TextColor3 = Color3.fromRGB(255, 255, 255)
+view.TextSize = 18.000
+
+UICorner_10.CornerRadius = UDim.new(0, 4)
+UICorner_10.Parent = view
+
+punish.Name = "punish"
+punish.Parent = List
+punish.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+punish.BackgroundTransparency = 0.200
+punish.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+punish.Size = UDim2.new(0, 957, 0, 30)
+punish.Font = Enum.Font.SourceSansBold
+punish.Text = "punish [player]"
+punish.TextColor3 = Color3.fromRGB(255, 255, 255)
+punish.TextSize = 18.000
+
+UICorner_11.CornerRadius = UDim.new(0, 4)
+UICorner_11.Parent = punish
+
+jail.Name = "jail"
+jail.Parent = List
+jail.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+jail.BackgroundTransparency = 0.200
+jail.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+jail.Size = UDim2.new(0, 957, 0, 30)
+jail.Font = Enum.Font.SourceSansBold
+jail.Text = "jail [player]"
+jail.TextColor3 = Color3.fromRGB(255, 255, 255)
+jail.TextSize = 18.000
+
+UICorner_12.CornerRadius = UDim.new(0, 4)
+UICorner_12.Parent = jail
+
+ragdoll.Name = "ragdoll"
+ragdoll.Parent = List
+ragdoll.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+ragdoll.BackgroundTransparency = 0.200
+ragdoll.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+ragdoll.Size = UDim2.new(0, 957, 0, 30)
+ragdoll.Font = Enum.Font.SourceSansBold
+ragdoll.Text = "ragdoll [player]"
+ragdoll.TextColor3 = Color3.fromRGB(255, 255, 255)
+ragdoll.TextSize = 18.000
+
+UICorner_13.CornerRadius = UDim.new(0, 4)
+UICorner_13.Parent = ragdoll
+
+commands_3.Name = "commands"
+commands_3.Parent = List
+commands_3.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+commands_3.BackgroundTransparency = 0.200
+commands_3.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+commands_3.Size = UDim2.new(0, 957, 0, 30)
+commands_3.Font = Enum.Font.SourceSansBold
+commands_3.Text = "commands / cmds"
+commands_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+commands_3.TextSize = 18.000
+
+UICorner_14.CornerRadius = UDim.new(0, 4)
+UICorner_14.Parent = commands_3
+
+rejoin.Name = "rejoin"
+rejoin.Parent = List
+rejoin.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+rejoin.BackgroundTransparency = 0.200
+rejoin.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+rejoin.Size = UDim2.new(0, 957, 0, 30)
+rejoin.Font = Enum.Font.SourceSansBold
+rejoin.Text = "rejoin / rj"
+rejoin.TextColor3 = Color3.fromRGB(255, 255, 255)
+rejoin.TextSize = 18.000
+
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = rejoin
+
+removetools.Name = "removetools"
+removetools.Parent = List
+removetools.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+removetools.BackgroundTransparency = 0.200
+removetools.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+removetools.Size = UDim2.new(0, 957, 0, 30)
+removetools.Font = Enum.Font.SourceSansBold
+removetools.Text = "removetools / rtools [player]"
+removetools.TextColor3 = Color3.fromRGB(255, 255, 255)
+removetools.TextSize = 18.000
+
+UICorner_16.CornerRadius = UDim.new(0, 4)
+UICorner_16.Parent = removetools
+
+stealtools.Name = "stealtools"
+stealtools.Parent = List
+stealtools.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+stealtools.BackgroundTransparency = 0.200
+stealtools.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+stealtools.Size = UDim2.new(0, 957, 0, 30)
+stealtools.Font = Enum.Font.SourceSansBold
+stealtools.Text = "stealtools / stools [player]"
+stealtools.TextColor3 = Color3.fromRGB(255, 255, 255)
+stealtools.TextSize = 18.000
+
+UICorner_17.CornerRadius = UDim.new(0, 4)
+UICorner_17.Parent = stealtools
+
+shutdown.Name = "shutdown"
+shutdown.Parent = List
+shutdown.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+shutdown.BackgroundTransparency = 0.200
+shutdown.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+shutdown.Size = UDim2.new(0, 957, 0, 30)
+shutdown.Font = Enum.Font.SourceSansBold
+shutdown.Text = "shutdown"
+shutdown.TextColor3 = Color3.fromRGB(255, 255, 255)
+shutdown.TextSize = 18.000
+
+UICorner_18.CornerRadius = UDim.new(0, 4)
+UICorner_18.Parent = shutdown
+
+serverlock.Name = "serverlock"
+serverlock.Parent = List
+serverlock.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+serverlock.BackgroundTransparency = 0.200
+serverlock.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+serverlock.Size = UDim2.new(0, 957, 0, 30)
+serverlock.Font = Enum.Font.SourceSansBold
+serverlock.Text = "serverlock / slock"
+serverlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+serverlock.TextSize = 18.000
+
+UICorner_19.CornerRadius = UDim.new(0, 4)
+UICorner_19.Parent = serverlock
+
+removetoolsall.Name = "removetoolsall"
+removetoolsall.Parent = List
+removetoolsall.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+removetoolsall.BackgroundTransparency = 0.200
+removetoolsall.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+removetoolsall.Size = UDim2.new(0, 957, 0, 30)
+removetoolsall.Font = Enum.Font.SourceSansBold
+removetoolsall.Text = "removetoolsall / rtoolsall"
+removetoolsall.TextColor3 = Color3.fromRGB(255, 255, 255)
+removetoolsall.TextSize = 18.000
+
+UICorner_20.CornerRadius = UDim.new(0, 4)
+UICorner_20.Parent = removetoolsall
+
+nolimbsall.Name = "nolimbsall"
+nolimbsall.Parent = List
+nolimbsall.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+nolimbsall.BackgroundTransparency = 0.200
+nolimbsall.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+nolimbsall.Size = UDim2.new(0, 957, 0, 30)
+nolimbsall.Font = Enum.Font.SourceSansBold
+nolimbsall.Text = "nolimbsall"
+nolimbsall.TextColor3 = Color3.fromRGB(255, 255, 255)
+nolimbsall.TextSize = 18.000
+
+UICorner_21.CornerRadius = UDim.new(0, 4)
+UICorner_21.Parent = nolimbsall
+
+bald.Name = "bald"
+bald.Parent = List
+bald.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+bald.BackgroundTransparency = 0.200
+bald.Position = UDim2.new(-0.00456389459, 0, 0, 0)
+bald.Size = UDim2.new(0, 957, 0, 30)
+bald.Font = Enum.Font.SourceSansBold
+bald.Text = "bald [player]"
+bald.TextColor3 = Color3.fromRGB(255, 255, 255)
+bald.TextSize = 18.000
+
+UICorner_22.CornerRadius = UDim.new(0, 4)
+UICorner_22.Parent = bald
+
+ragdollall.Name = "ragdollall"
+ragdollall.Parent = List
+ragdollall.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+ragdollall.BackgroundTransparency = 0.200
+ragdollall.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+ragdollall.Size = UDim2.new(0, 957, 0, 30)
+ragdollall.Font = Enum.Font.SourceSansBold
+ragdollall.Text = "ragdollall"
+ragdollall.TextColor3 = Color3.fromRGB(255, 255, 255)
+ragdollall.TextSize = 18.000
+
+UICorner_23.CornerRadius = UDim.new(0, 4)
+UICorner_23.Parent = ragdollall
+
+killall.Name = "killall"
+killall.Parent = List
+killall.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+killall.BackgroundTransparency = 0.200
+killall.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+killall.Size = UDim2.new(0, 957, 0, 30)
+killall.Font = Enum.Font.SourceSansBold
+killall.Text = "killall"
+killall.TextColor3 = Color3.fromRGB(255, 255, 255)
+killall.TextSize = 18.000
+
+UICorner_24.CornerRadius = UDim.new(0, 4)
+UICorner_24.Parent = killall
+
+punishall.Name = "punishall"
+punishall.Parent = List
+punishall.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+punishall.BackgroundTransparency = 0.200
+punishall.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+punishall.Size = UDim2.new(0, 957, 0, 30)
+punishall.Font = Enum.Font.SourceSansBold
+punishall.Text = "punishall"
+punishall.TextColor3 = Color3.fromRGB(255, 255, 255)
+punishall.TextSize = 18.000
+
+UICorner_25.CornerRadius = UDim.new(0, 4)
+UICorner_25.Parent = punishall
+
+softshutdown.Name = "softshutdown"
+softshutdown.Parent = List
+softshutdown.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+softshutdown.BackgroundTransparency = 0.200
+softshutdown.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+softshutdown.Size = UDim2.new(0, 957, 0, 30)
+softshutdown.Font = Enum.Font.SourceSansBold
+softshutdown.Text = "softshutdown"
+softshutdown.TextColor3 = Color3.fromRGB(255, 255, 255)
+softshutdown.TextSize = 18.000
+
+UICorner_26.CornerRadius = UDim.new(0, 4)
+UICorner_26.Parent = softshutdown
+
+btools.Name = "btools"
+btools.Parent = List
+btools.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+btools.BackgroundTransparency = 0.200
+btools.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+btools.Size = UDim2.new(0, 957, 0, 30)
+btools.Font = Enum.Font.SourceSansBold
+btools.Text = "btools"
+btools.TextColor3 = Color3.fromRGB(255, 255, 255)
+btools.TextSize = 18.000
+
+UICorner_27.CornerRadius = UDim.new(0, 4)
+UICorner_27.Parent = btools
+
+loopkill.Name = "loopkill"
+loopkill.Parent = List
+loopkill.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+loopkill.BackgroundTransparency = 0.200
+loopkill.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+loopkill.Size = UDim2.new(0, 957, 0, 30)
+loopkill.Font = Enum.Font.SourceSansBold
+loopkill.Text = "loopkill [player]"
+loopkill.TextColor3 = Color3.fromRGB(255, 255, 255)
+loopkill.TextSize = 18.000
+
+UICorner_28.CornerRadius = UDim.new(0, 4)
+UICorner_28.Parent = loopkill
+
+unloopkill.Name = "unloopkill"
+unloopkill.Parent = List
+unloopkill.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+unloopkill.BackgroundTransparency = 0.200
+unloopkill.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+unloopkill.Size = UDim2.new(0, 957, 0, 30)
+unloopkill.Font = Enum.Font.SourceSansBold
+unloopkill.Text = "unloopkill"
+unloopkill.TextColor3 = Color3.fromRGB(255, 255, 255)
+unloopkill.TextSize = 18.000
+
+UICorner_29.CornerRadius = UDim.new(0, 4)
+UICorner_29.Parent = unloopkill
+
+fling.Name = "fling"
+fling.Parent = List
+fling.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+fling.BackgroundTransparency = 0.200
+fling.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+fling.Size = UDim2.new(0, 957, 0, 30)
+fling.Font = Enum.Font.SourceSansBold
+fling.Text = "fling [player]"
+fling.TextColor3 = Color3.fromRGB(255, 255, 255)
+fling.TextSize = 18.000
+
+UICorner_30.CornerRadius = UDim.new(0, 4)
+UICorner_30.Parent = fling
+
+unview.Name = "unview"
+unview.Parent = List
+unview.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+unview.BackgroundTransparency = 0.200
+unview.Position = UDim2.new(0.0158898309, 0, -8.75056003e-07, 0)
+unview.Size = UDim2.new(0, 957, 0, 30)
+unview.Font = Enum.Font.SourceSansBold
+unview.Text = "unview"
+unview.TextColor3 = Color3.fromRGB(255, 255, 255)
+unview.TextSize = 18.000
+
+UICorner_31.CornerRadius = UDim.new(0, 4)
+UICorner_31.Parent = unview
+
+Example.Name = "Example"
+Example.Parent = Commands
+Example.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Example.BackgroundTransparency = 0.200
+Example.BorderSizePixel = 0
+Example.Position = UDim2.new(0.0233050846, 0, 0, 0)
+Example.Size = UDim2.new(0, 450, 0, 99)
+Example.Visible = false
+Example.ZIndex = 4
+Example.Font = Enum.Font.SourceSansBold
+Example.Text = "COMMAND"
+Example.TextColor3 = Color3.fromRGB(255, 255, 255)
+Example.TextSize = 20.000
+Example.TextWrapped = true
+Example.TextYAlignment = Enum.TextYAlignment.Top
+
+Empty.Name = "Empty"
+Empty.Parent = Example
+Empty.AnchorPoint = Vector2.new(0.5, 0)
+Empty.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Empty.BackgroundTransparency = 1.000
+Empty.Position = UDim2.new(0.508869171, 0, 0.616666675, 10)
+Empty.Size = UDim2.new(0, 436, 0, 18)
+Empty.ZIndex = 5
+Empty.Font = Enum.Font.SourceSansBold
+Empty.Text = ""
+Empty.TextColor3 = Color3.fromRGB(255, 255, 255)
+Empty.TextScaled = true
+Empty.TextSize = 24.000
+Empty.TextWrapped = true
+Empty.TextXAlignment = Enum.TextXAlignment.Left
+
+CmdName.Name = "CmdName"
+CmdName.Parent = Example
+CmdName.AnchorPoint = Vector2.new(0.5, 0)
+CmdName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CmdName.BackgroundTransparency = 1.000
+CmdName.Position = UDim2.new(0.5, 0, -0.0833333358, 10)
+CmdName.Size = UDim2.new(0, 436, 0, 18)
+CmdName.ZIndex = 5
+CmdName.Font = Enum.Font.SourceSansBold
+CmdName.Text = "Name: Command Name"
+CmdName.TextColor3 = Color3.fromRGB(255, 255, 255)
+CmdName.TextScaled = true
+CmdName.TextSize = 24.000
+CmdName.TextWrapped = true
+CmdName.TextXAlignment = Enum.TextXAlignment.Left
+
+Description.Name = "Description"
+Description.Parent = Example
+Description.AnchorPoint = Vector2.new(0.5, 0)
+Description.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Description.BackgroundTransparency = 1.000
+Description.Position = UDim2.new(0.5, 0, -0.0833333358, 10)
+Description.Size = UDim2.new(0, 436, 0, 18)
+Description.ZIndex = 5
+Description.Font = Enum.Font.SourceSansBold
+Description.Text = "Description: Description"
+Description.TextColor3 = Color3.fromRGB(255, 255, 255)
+Description.TextScaled = true
+Description.TextSize = 24.000
+Description.TextWrapped = true
+Description.TextXAlignment = Enum.TextXAlignment.Left
+
+Aliases.Name = "Aliases"
+Aliases.Parent = Example
+Aliases.AnchorPoint = Vector2.new(0.5, 0)
+Aliases.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Aliases.BackgroundTransparency = 1.000
+Aliases.Position = UDim2.new(0.5, 0, -0.0833333358, 10)
+Aliases.Size = UDim2.new(0, 436, 0, 18)
+Aliases.ZIndex = 5
+Aliases.Font = Enum.Font.SourceSansBold
+Aliases.Text = "Aliases: None"
+Aliases.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aliases.TextScaled = true
+Aliases.TextSize = 24.000
+Aliases.TextWrapped = true
+Aliases.TextXAlignment = Enum.TextXAlignment.Left
+
+UIListLayout_2.Parent = Example
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 5)
+
+ScrollingFrame.Parent = Commands
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(73, 71, 191)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Size = UDim2.new(1, 0, 1, 0)
+ScrollingFrame.Visible = false
+ScrollingFrame.ZIndex = 999999999
+ScrollingFrame.CanvasSize = UDim2.new(1, 0, 2, 0)
+
+list.Name = "list"
+list.Parent = ScrollingFrame
+list.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+list.BackgroundTransparency = 1.000
+list.Size = UDim2.new(0.955600023, 0, 1, 0)
+list.ZIndex = 2
+list.Font = Enum.Font.SourceSans
+list.Text = ""
+list.TextColor3 = Color3.fromRGB(157, 155, 255)
+list.TextSize = 15.000
+list.TextWrapped = true
+list.TextXAlignment = Enum.TextXAlignment.Left
+list.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_32.CornerRadius = UDim.new(0, 5)
+UICorner_32.Parent = Commands
+
+close.Name = "close"
+close.Parent = Commands
+close.AnchorPoint = Vector2.new(1, 0)
+close.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+close.Position = UDim2.new(0, 973, 0, 8)
+close.Size = UDim2.new(0, 20, 0, 20)
+close.ZIndex = 3
+close.AutoButtonColor = false
+close.Font = Enum.Font.Cartoon
+close.Text = ""
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextSize = 18.000
+close.TextWrapped = true
+
+UICorner_33.CornerRadius = UDim.new(0, 5)
+UICorner_33.Parent = close
+
+-- Scripts:
+local function Tween(Object, Time, Style, Direction, Customization)
+	if Style == nil then
+		game:GetService("TweenService"):Create(Object, TweenInfo.new(Time), Customization):Play()
+	else
+		game:GetService("TweenService"):Create(Object, TweenInfo.new(Time, Style, Direction), Customization):Play()
+	end
+end
+Tween(commands_2, .5, Linear, In, {Position = UDim2.new(0.508, -135, 1.01, -764)})
+local function NYGZA_fake_script() -- Frame.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', Commands)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(NYGZA_fake_script)()
+local function VQGJRW_fake_script() -- close.Script 
+	local script = Instance.new('Script', close)
+
+	button = script.Parent
+	
+	
+	function onClicked(GUI)
+	Tween(commands_2, .5, Linear, In, {Position = UDim2.new(0.508, -135, 2.51, -764)})
+	wait(1)
+	 commands_2:remove()
+	end
+	script.Parent.MouseButton1Click:connect(onClicked)
+end
+coroutine.wrap(VQGJRW_fake_script)()
